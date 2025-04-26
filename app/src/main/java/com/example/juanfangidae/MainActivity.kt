@@ -25,9 +25,7 @@ class MainActivity : AppCompatActivity() {
             val password = binding.etPass.text.toString().trim()
 
             if (email.isNotEmpty() && password.isNotEmpty()) {
-                Toast.makeText(this, "Login Berhasil!!", Toast.LENGTH_SHORT).show()
 
-                //pindah ke halaman dashboard
                 val intent = Intent(this, DashboardActivity::class.java)
                 intent.putExtra("EMAIL", email)
                 startActivity(intent)
@@ -39,6 +37,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.textRegister.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.tvForgot.setOnClickListener {
+            val intent = Intent(this, ForgotPassActivity::class.java)
             startActivity(intent)
         }
     }

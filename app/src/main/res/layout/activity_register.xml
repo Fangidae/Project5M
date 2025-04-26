@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="@drawable/book"
     tools:context=".RegisterActivity">
 
     <ImageView
@@ -34,6 +35,7 @@
             android:layout_marginLeft="125dp"
             android:layout_weight="1"
             android:text="Libra"
+            android:textColor="@color/white"
             android:textSize="24dp"
             android:textStyle="bold" />
 
@@ -55,6 +57,7 @@
         android:layout_marginTop="80dp"
         android:layout_gravity="center"
         android:inputType="text"
+        android:textColor="@color/white"
         android:layout_below="@id/textView4"
         android:hint="Username"
         android:textSize="16dp" />
@@ -67,6 +70,7 @@
         android:layout_gravity="center"
         android:ems="10"
         android:inputType="text"
+        android:textColor="@color/white"
         android:hint="E-mail"
         android:textSize="16dp" />
 
@@ -78,12 +82,13 @@
         android:layout_gravity="center"
         android:ems="10"
         android:inputType="text"
+        android:textColor="@color/white"
         android:hint="Password"
         android:textSize="16dp"/>
 
     <Button
         android:id="@+id/btn_register"
-        android:layout_width="105dp"
+        android:layout_width="115dp"
         android:layout_height="44dp"
         android:layout_marginTop="60dp"
         android:layout_gravity="center"
@@ -102,6 +107,7 @@
             android:layout_marginLeft="95dp"
             android:layout_marginTop="20dp"
             android:text="sudah punya akun?"
+            android:textColor="@color/white"
             android:textSize="12dp" />
 
         <TextView
@@ -112,6 +118,7 @@
             android:layout_marginTop="20dp"
             android:text="Login"
             android:textColor="#2642D3"
+            android:textStyle=""
             android:textSize="12dp" />
     </LinearLayout>
 

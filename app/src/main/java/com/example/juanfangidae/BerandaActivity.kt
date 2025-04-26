@@ -3,6 +3,9 @@ package com.example.juanfangidae
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -31,16 +34,28 @@ class BerandaActivity : AppCompatActivity() {
         listPerpustakaan = ArrayList()
 
         listPerpustakaan.add(ItemData1(R.drawable.buku, "Biologi SMA/MA", "Esis",
-            "Buku ini dirancang untuk siswa kelas XII SMA/MA yang ingin memahami Biologi secara " +
-                    "mendalam. Mengacu pada Kurikulum Tingkat Satuan Pendidikan (KTSP) Standar Isi 2006, " +
-                    "buku ini didukung oleh ilustrasi berwarna penuh untuk memudahkan pemahaman."))
+            "Buku ini ditujukan untuk siswa kelas XII program studi Ilmu Pengetahuan Alam (IPA) dan disusun" +
+                    " berdasarkan Kurikulum Standar Isi 2006. Materinya disajikan dengan bahasa yang lugas dan " +
+                    "dilengkapi dengan ilustrasi untuk memudahkan pemahaman siswa terhadap konsep-konsep biologi. " +
+                    "Topik-topik yang dibahas mencakup berbagai aspek biologi yang relevan dengan kehidupan " +
+                    "sehari-hari, serta dirancang untuk menumbuhkan kemampuan berpikir kritis dan analitis siswa." +
+                    "Namun, berdasarkan analisis kelayakan yang dilakukan oleh Universitas Negeri Malang, buku ini" +
+                    " memperoleh skor kelayakan isi sebesar 2,26 (56,5%), yang tergolong cukup. Sementara itu, skor" +
+                    " kebahasaan mencapai 3,71 (92,75%), menunjukkan kualitas bahasa yang tinggi. Skor penyajian " +
+                    "sebesar 2,4 (60%) juga tergolong cukup. Oleh karena itu, disarankan agar pengguna buku ini " +
+                    "bersikap selektif dalam memanfaatkan informasinya, dengan mempertimbangkan kelebihan seperti" +
+                    " cakupan materi dan bahasa yang komunikatif."))
         listPerpustakaan.add(ItemData1(R.drawable.bukuii, "Laskar Pelangi", "Bentang Pustaka",
-            "Novel ini mengisahkan kehidupan sepuluh anak dari keluarga kurang mampu di Desa Gantung," +
-                    " Belitung Timur, yang bersekolah di SD Muhammadiyah—sekolah sederhana yang hampir ditutup " +
-                    "karena kekurangan murid. Kedatangan Harun sebagai murid kesepuluh menyelamatkan sekolah " +
-                    "tersebut dari penutupan. Anak-anak ini kemudian dikenal sebagai \"Laskar Pelangi\", nama " +
-                    "yang diberikan oleh guru mereka, Bu Muslimah, karena kecintaan mereka terhadap pelangi yang" +
-                    " sering mereka saksikan bersama."))
+            "Laskar Pelangi adalah novel pertama dari tetralogi Andrea Hirata yang mengisahkan kehidupan sepuluh " +
+                    "anak dari keluarga miskin di Desa Gantung, Pulau Belitung. Mereka bersekolah di SD Muhammadiyah yang" +
+                    " nyaris ditutup karena kekurangan murid. Dengan semangat juang yang tinggi, mereka berusaha " +
+                    "mempertahankan sekolah tersebut agar tetap berdiri. Tokoh-tokoh utama dalam novel ini antara lain:" +
+                    "Ikal: narator cerita yang mewakili Andrea Hirata " +
+                    "sendiri. Lintang: anak jenius yang rela bersepeda puluhan kilometer demi bersekolah. Mahar: anak " +
+                    "kreatif dan imajinatif yang sering diremehkan, namun berhasil mengangkat derajat sekolah mereka dalam " +
+                    "karnaval 17 Agustus. Novel ini menggambarkan realitas pendidikan di daerah terpencil Indonesia, dengan" +
+                    " segala keterbatasannya. Namun, di tengah keterbatasan tersebut, terdapat semangat belajar dan mengajar" +
+                    " yang luar biasa."))
         listPerpustakaan.add(ItemData1(R.drawable.bukuiii, "Negara & Revolusi", "Resist Book",
             "Negara dan Revolusi adalah salah satu karya paling penting dari Lenin, yang ditulis pada " +
                     "Agustus–September 1917 menjelang Revolusi Oktober di Rusia. Dalam buku ini, Lenin berupaya" +

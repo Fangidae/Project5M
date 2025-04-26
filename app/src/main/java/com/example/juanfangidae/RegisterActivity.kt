@@ -27,7 +27,7 @@ class RegisterActivity : AppCompatActivity() {
             val password = binding.etPass2.text.toString().trim()
 
             if (name.isNotEmpty() && email.isNotEmpty() && password.isNotEmpty()) {
-                Toast.makeText(this, "Registrasi Berhasil!!", Toast.LENGTH_SHORT).show()
+
 
                 val intent = Intent(this, DashboardActivity::class.java)
                 intent.putExtra("USERNAME", name)
