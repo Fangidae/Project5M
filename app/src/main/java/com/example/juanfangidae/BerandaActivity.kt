@@ -57,21 +57,31 @@ class BerandaActivity : AppCompatActivity() {
                     " segala keterbatasannya. Namun, di tengah keterbatasan tersebut, terdapat semangat belajar dan mengajar" +
                     " yang luar biasa."))
         listPerpustakaan.add(ItemData1(R.drawable.bukuiii, "Negara & Revolusi", "Resist Book",
-            "Negara dan Revolusi adalah salah satu karya paling penting dari Lenin, yang ditulis pada " +
-                    "Agustus–September 1917 menjelang Revolusi Oktober di Rusia. Dalam buku ini, Lenin berupaya" +
-                    " memulihkan teori negara dan revolusi proletar sebagaimana yang diajarkan oleh Karl Marx dan" +
-                    " Friedrich Engels, yang menurutnya telah diselewengkan oleh kaum borjuis dan oportunis dalam" +
-                    " gerakan buruh setelah kematian Marx."))
+            "Negara dan Revolusi adalah karya penting Vladimir Lenin yang membahas peran negara dalam perjuangan kelas," +
+                    " dan diterbitkan dalam bahasa Indonesia oleh Resist Book. Ditulis pada Agustus–September 1917, buku ini hadir " +
+                    "sebagai respons terhadap penyimpangan teori negara yang diajarkan Marx dan Engels, yang menurut Lenin telah" +
+                    " diselewengkan oleh kaum reformis setelah kematian Marx. Dalam buku ini, Lenin menegaskan bahwa negara bukanlah " +
+                    "institusi netral, melainkan alat kekuasaan kelas penguasa untuk menindas kelas tertindas. Ia mengkritik keras" +
+                    " gagasan bahwa kapitalisme bisa diperbaiki secara bertahap melalui reformasi, dan menekankan bahwa revolusi " +
+                    "proletariat adalah satu-satunya jalan menuju masyarakat tanpa kelas, di mana negara akan \"layu\" dan akhirnya " +
+                    "menghilang. Edisi Resist Book dilengkapi dengan panduan membaca, catatan kaki, glosarium, dan kronologi sejarah" +
+                    " untuk membantu pembaca memahami konteks intelektual dan historis karya ini. Dengan tebal 230 halaman, buku ini " +
+                    "tetap relevan hingga kini, menjadi rujukan penting dalam diskusi tentang kekuasaan, negara, dan perubahan sosial."))
         listPerpustakaan.add(ItemData1(R.drawable.bukuiv, "Rich Dad Poor Dad", "Warner Books",
-            "Rich Dad Poor Dad adalah buku yang mengisahkan pengalaman pribadi Robert T. Kiyosaki yang " +
-                    "dibesarkan oleh dua figur ayah dengan pandangan finansial yang kontras. Ayah kandungnya, " +
-                    "Poor Dad adalah seorang pendidik yang menekankan pentingnya pendidikan formal dan pekerjaan tetap." +
-                    " Sementara itu, ayah dari sahabatnya, \"Rich Dad,\" adalah seorang pengusaha sukses yang " +
-                    "mengajarkan pentingnya literasi keuangan, investasi, dan membangun aset."))
+            "Rich Dad Poor Dad karya Robert T. Kiyosaki membandingkan dua pandangan tentang keuangan dari Poor Dad " +
+                    "(ayah kandungnya) dan Rich Dad (ayah sahabatnya). Buku ini mengajarkan pentingnya literasi keuangan, membangun" +
+                    " aset, dan menghasilkan pendapatan pasif untuk mencapai kebebasan finansial. Kiyosaki menyoroti perbedaan antara " +
+                    "aset dan liabilitas serta mengkritik sistem pendidikan formal yang kurang membekali siswa dengan keterampilan keuangan. " +
+                    "Dengan gaya sederhana dan inspiratif, buku ini mengajak pembaca untuk mengubah pola pikir tentang uang dan investasi."))
         listPerpustakaan.add(ItemData1(R.drawable.bukuv, "Artificial Intelligence", "Pearson",
-            "Buku ini dianggap sebagai referensi utama dalam bidang kecerdasan buatan (AI) dan digunakan di " +
-                    "lebih dari 1.500 universitas di seluruh dunia. Dirancang untuk mahasiswa sarjana dan pascasarjana," +
-                    " buku ini juga cocok bagi profesional yang ingin memahami teori dan praktik AI secara mendalam."))
+            "Artificial Intelligence: A Modern Approach adalah buku teks terkemuka dalam bidang kecerdasan buatan (AI) yang " +
+                    "ditulis oleh Stuart Russell dan Peter Norvig, diterbitkan oleh Pearson. Edisi keempatnya, yang dirilis pada tahun " +
+                    "2020, memberikan pembaruan menyeluruh terhadap teori dan praktik AI, mencakup topik-topik seperti pembelajaran mesin," +
+                    " pembelajaran mendalam, sistem multiagen, robotika, pemrosesan bahasa alami, kausalitas, pemrograman probabilistik, " +
+                    "serta isu-isu etika seperti privasi dan keadilan. Buku ini mengadopsi pendekatan terpadu dengan menjadikan konsep agen " +
+                    "cerdas sebagai tema utama, yaitu entitas yang menerima persepsi dari lingkungan dan melakukan tindakan berdasarkan persepsi" +
+                    " tersebut. Pendekatan ini membantu pembaca memahami bagaimana berbagai subbidang AI saling terkait dalam membangun sistem " +
+                    "yang cerdas dan berguna."))
         listPerpustakaan.add(ItemData1(R.drawable.bukuvi, "Hukum Pidana", "Bumi Aksara",
             "Buku ini membahas secara komprehensif mengenai hukum pidana di Indonesia, dimulai dari pengertian " +
                     "dasar, asas-asas hukum pidana, hingga penerapan hukum pidana dalam praktik. Penulis menguraikan " +

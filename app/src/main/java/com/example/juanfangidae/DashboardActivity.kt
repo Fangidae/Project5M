@@ -75,26 +75,22 @@ class DashboardActivity : AppCompatActivity() {
         return when (item.itemId) {
             R.id.logout -> {
                 val intent = Intent(this, MainActivity::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(intent)
                 finish()
                 true
             }
             R.id.setting -> {
                 val intent = Intent(this, SettingActivity::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(intent)
-                finish()
                 true
             }
             R.id.profile -> {
                 val intent = Intent(this, ProfileActivity::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(intent)
-                finish()
                 true
             }
             else -> super.onOptionsItemSelected(item)
         }
     }
+
 }
