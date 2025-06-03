@@ -1,30 +1,55 @@
 package com.example.juanfangidae
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
+import android.util.Patterns
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.juanfangidae.databinding.ActivityForgotPassBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class ForgotPassActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityForgotPassBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_forgot_pass)
 
-        val etReset = findViewById<EditText>(R.id.et_reset)
-        val btnReset = findViewById<Button>(R.id.btn_reset)
+        // Inisialisasi binding
+        binding = ActivityForgotPassBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        btnReset.setOnClickListener {
-            val emailInput = etReset.text.toString().trim()
-            if (emailInput.isNotEmpty()) {
-                Toast.makeText(this, "Code verifikasi telah dikirim ke Email anda.", Toast.LENGTH_LONG).show()
-            } else {
-                Toast.makeText(this, "Email belum diisi!", Toast.LENGTH_SHORT).show()
+        binding.btnReset.setOnClickListener {
+            val emailInput = binding.etReset.text.toString().trim()
+
+            // Validasi email kosong
+            if (emailInput.isEmpty()) {
+                binding.etReset.error = "Email belum diisi!"
+                binding.etReset.requestFocus()
+                return@setOnClickListener
             }
+
+            // Validasi format email
+            if (!Patterns.EMAIL_ADDRESS.matcher(emailInput).matches()) {
+                binding.etReset.error = "Format email tidak valid!"
+                binding.etReset.requestFocus()
+                return@setOnClickListener
+            }
+
+            // Kirim permintaan reset password melalui Firebase
+            FirebaseAuth.getInstance().sendPasswordResetEmail(emailInput)
+                .addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                        Toast.makeText(this, "Cek email Anda untuk reset password.", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this, LoginActivity::class.java)
+                        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                        startActivity(intent)
+                    } else {
+                        Toast.makeText(this, "Gagal: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
+                    }
+                }
         }
     }
 }

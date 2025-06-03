@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:background="@drawable/book"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

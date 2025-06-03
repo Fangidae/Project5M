@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:background="@drawable/book"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
 
     <ImageView
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:layout_gravity="center"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:hint="E-mail"
         android:textColor="@color/white"
         android:textSize="16dp" />
@@ -70,10 +70,20 @@
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:textColor="@color/white"
         android:hint="Password"
         android:textSize="16dp"/>
+
+    <CheckBox
+        android:id="@+id/cb_show_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tampilkan Password"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="left"/>
 
     <TextView
         android:id="@+id/tv_forgot"
@@ -81,7 +91,7 @@
         android:layout_height="wrap_content"
         android:text="forgot password ?"
         android:layout_marginLeft="181dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:textColor="#2642D3"
         android:textStyle="bold"
         android:layout_gravity=""/>

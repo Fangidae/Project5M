@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:background="@drawable/book"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/imageView3"
